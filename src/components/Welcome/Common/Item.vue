@@ -8,7 +8,9 @@ const props = defineProps<{
 
 <template>
   <div class="welcome-card">
-    <img :src="`/src/assets/img/${props.iconName}.png`" alt="">
+    <svg>
+      <use :xlink:href="`#${props.iconName}`"></use>
+    </svg>
     <p>
       {{ props.title }}
     </p>

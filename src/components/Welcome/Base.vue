@@ -13,12 +13,13 @@ const emit = defineEmits(['updateCurComp'])
 <template>
   <div class="welcome-container">
     <header class="welcome-header">
-      <img src="/src/assets/img/logo.svg" alt="">
+      <svg>
+        <use xlink:href="#logo"></use>
+      </svg>
       <p>山竹记账</p>
     </header>
     <main class="welcome-wrapper">
-
-        <slot></slot>
+      <slot></slot>
     </main>
     <footer class="welcome-footer">
       <button :style="{ visibility: 'hidden' }" disabled>占位</button>
@@ -50,7 +51,7 @@ const emit = defineEmits(['updateCurComp'])
     align-items: center;
     padding-bottom: 1rem;
 
-    img {
+    svg {
       width: 60px;
       height: 60px;
     }
@@ -68,7 +69,7 @@ const emit = defineEmits(['updateCurComp'])
     flex-direction: column;
     position: relative;
 
-    img {
+    svg {
       width: 32%;
       height: auto;
       margin: 0 auto;
