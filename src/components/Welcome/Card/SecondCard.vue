@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WelcomeItem from '../Common/Item.vue'
+import WelcomeItem from './CardItem.vue'
 </script>
 
 
