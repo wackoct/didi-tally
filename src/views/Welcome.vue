@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Welcome from '../components/Welcome/Base.vue'
-import { FirstCard, SecondCard, ThirdCard, FourthCard } from '../components/Welcome/Sub/Index'
+import { FirstCard, SecondCard, ThirdCard, FourthCard } from '../components/Welcome/Card/Index'
 import { ref } from 'vue'
 
 type ArrType = {
